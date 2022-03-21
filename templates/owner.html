@@ -1,0 +1,19 @@
+{% extends 'nav_bar.html' %}
+{% load static %}
+{% block content %}
+    <link rel="stylesheet" href="{% static 'base/css/owner.css' %}">
+    <div class="side-bar">
+    <form method="GET" action="">
+    <h1>Name</h1>
+    <label><input  class="search-item" type="text" placeholder="Search" name="search-item"> <span><button>Refresh</button></span></label>
+    <ol>
+        {% for i in item %}
+            <li>@{{ i }} <span> <a href="{% url 'edit-item' i.id%}"><sup> edit</sup></a></span>
+            <span><a href="{% url 'update-item' i.id%}"><sup>update</sup></a></span> <span> <a href="{% url 'delete-item' i.id%}"><sup> delete</sup></a></span>
+            </li>
+            <p class="balance-update">Balance: ₱ {{ i.balance }}<p>
+        {% endfor %}
+    </ol>
+    </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'nav_bar.html' %}
+{% load static  %}
+{% block content %}
+    <link rel="stylesheet" href="{% static 'base/css/delete.css' %}">
+    <div class="delete">
+    <form method="POST" action="">
+        {% csrf_token %}
+    <h1>Are you sure you want to delete <span>{{ item }}</span>?</h1>
+        <button type="submit" class="button">Delete</button>
+    </form>
+    </div>
+{% endblock %}

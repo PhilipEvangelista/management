@@ -1,0 +1,50 @@
+{% extends 'nav_bar.html' %}
+
+{% load static %}
+<title>Profile</title>
+{% block content %}
+
+    <link rel="stylesheet" href="{% static 'base/css/profile.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+
+    <div class="table">
+    <table>
+
+        <tr>
+            <th>Name</th>
+            <td>{{ item.name }}</td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td>{{ item.age }} years old</td>
+        </tr>
+        <tr>
+            <th>Date</th>
+            <td>{{ item.date.date }}</td>
+        </tr>
+    <tr>
+            <th>Time</th>
+            <td>{{ item.date.time }}</td>
+        </tr>
+    <tr>
+            <th>Balance</th>
+            <td>₱ {{ item.balance }}</td>
+        </tr>
+        <tr>
+            <th>Interest</th>
+            <td>₱ {{ item.interest }}</td>
+        </tr>
+        <tr>
+            <th>Agreement</th>
+            {% if item.agreement == True %}
+                <td>Agree</td>
+            {% else %}
+                <td>Disagree</td>
+            {% endif %}
+        </tr>
+    </table>
+    </div>
+{% endblock %}
+

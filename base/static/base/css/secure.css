@@ -1,0 +1,28 @@
+.secure{
+    margin: 60px 60px;
+    font-size: 20px;
+    font-family: arial, serif;
+    font-weight: bold;
+
+}
+.button{
+    font-family: arial, serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px 30px;
+    position: relative;
+    left: 10%;
+    background: lawngreen;
+    color: black;
+    border: hidden;
+    border-radius: 5px;
+    transition: color 0.2s, box-shadow 0.2s;
+}
+.button:hover{
+    color: white;
+    box-shadow: 0 2px 5px rgb(35, 34, 34);
+}
+.button:active{
+    opacity: 0.8;
+    color: black;
+}

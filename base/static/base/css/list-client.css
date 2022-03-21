@@ -1,0 +1,67 @@
+.list-client{
+    overflow: scroll;
+    border: 2px groove;
+    width: 25%;
+    height: 400px;
+    position: absolute;
+    left: 7%;
+    top: 10%;
+    margin-top: 7%;
+    border-radius: 5px;
+
+}
+.refresh{
+    border-radius: 5px;
+    margin-top: 12px;
+    position: relative;
+    left: 10%;
+    cursor: pointer;
+    padding: 7px;
+    font-family: serif;
+    font-size: 17px;
+    font-weight: bold;
+    border: hidden;
+    background: #12d912;
+    transition: color 0.2s, opacity 0.2s, background-color 0.2s;
+}
+.refresh:hover{
+    color: white;
+    opacity: 0.9;
+    background: black;
+
+}
+
+
+ol{
+    font-family: alegreya, serif;
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+li a{
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.2s, color 0.2s;
+}
+li a:hover{
+    color: white;
+    background-color: #333333;
+    border-radius: 5px;
+    padding: 5px;
+}
+li a:active{
+    color: black;
+    background: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+.search{
+    font-family: alegreya, serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 15px;
+
+}

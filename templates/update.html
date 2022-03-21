@@ -1,0 +1,54 @@
+{% extends 'nav_bar.html' %}
+{% load static %}
+{% block content %}
+    <link rel="stylesheet" href="{%static 'base/css/update.css'%}">
+    <title>Payment</title>
+    <div class="update-item">
+    <form method="POST" action="">
+        {% csrf_token %}
+    <table>
+        <tr>
+            <th>Name</th>
+            <td>{{ item.name }}</td>
+        </tr>
+        <tr>
+            <th>Date of Debts</th>
+            <td>{{ item.date.date}}</td>
+        </tr>
+        <tr>
+            <th>Date</th>
+            <td>{{ time}}</td>
+        </tr>
+        <tr>
+            <th>Interest</th>
+            <td>₱ {{ item.interest }}</td>
+        </tr>
+        <tr>
+            <th>Balance</th>
+            <td>₱ {{ item.balance }}</td>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <td><label>
+                <input value="0" name="get-amount" class='amount-debts' placeholder="Enter Amount" type="number" min="0">
+            </label></td>
+        </tr>
+        <tr>
+            <th>
+                Payment
+            </th>
+            <td>
+                <label>
+                    <select class="get_option" name="get_option">
+                        <option>Add Debts</option>
+                        <option>Pay Debts</option>
+                    </select>
+                </label>
+            </td>
+        </tr>
+    </table>
+        <input type="submit" class="amount" name="amount">
+         </form>
+
+    </div>
+{% endblock %}

@@ -1,0 +1,43 @@
+.create{
+    border: 2px solid;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "arial", serif;
+    width: 40%;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.agreement{
+    font-size: 20px;
+    font-family: arial, serif;
+    position: relative;
+    width: 30%;
+    left: 5%;
+}
+.create input{
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: arial, serif;
+    border-radius: 5px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.create button{
+    font-size: 20px;
+    background-color: lawngreen;
+    color: white;
+    padding: 10px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.2s, background-color 0.2s;
+}
+.create button:hover{
+    color: lawngreen;
+    background: white;
+}
+.create button:active{
+    color: black;
+    background: lawngreen;
+}

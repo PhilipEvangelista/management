@@ -1,0 +1,35 @@
+.table table tr td{
+    border: 2px solid;
+    text-align: center;
+    font-family: roboto, serif;
+    font-size: 40px;
+    font-weight: lighter;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+.table table tr th{
+    text-align: left;
+    font-family: Roboto mono, serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+.table{
+    margin-top: 50px;
+    padding: 10px;
+
+}
+.balance{
+    position: absolute;
+    left: 15%;
+    top:10%;
+    font-family: Montserrat, serif;
+    font-size: 50px;
+}
+.text-balance{
+    position: absolute;
+    left: 20%;
+    top:21%;
+    font-family: arial, serif;
+    color: grey;
+}

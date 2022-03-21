@@ -1,0 +1,17 @@
+.delete{
+    border: 2px solid;
+    position: absolute;
+    width: 30%;
+    left: 10%;
+    top: 20%;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: arial, serif;
+}
+.delete span{
+    text-decoration: underline;
+    text-decoration-color: red;
+    color: red;
+}

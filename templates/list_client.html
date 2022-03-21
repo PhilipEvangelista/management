@@ -1,0 +1,24 @@
+{% extends "nav_bar.html"%}
+{% load static %}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+{%  block content%}
+    <title>
+    List-Client
+</title>
+    <link rel="stylesheet" href="{% static 'base/css/list-client.css'%}">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&display=swap" rel="stylesheet">
+    <form>
+<div class="list-client">
+
+<label><input name="search" class="search" type="text" placeholder="Search"></label>
+<button class="refresh">Refresh</button>
+    <ol>
+   {% for i in item%}
+       <li><a href="{%url 'profile' i.id %}">{{ i.name }}</a></li>
+    {% endfor %}
+</ol>
+</div>
+    </form>
+{% endblock %}

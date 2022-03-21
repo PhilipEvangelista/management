@@ -1,0 +1,15 @@
+{% extends 'nav_bar.html' %}
+{%  load static %}
+{% block content %}
+    <title>Security</title>
+    <link rel="stylesheet" href="{% static 'base/css/secure.css' %}">
+    <div class="secure">
+    <form method="POST" action="">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" class="button">
+    </form>
+
+    </div>
+
+{% endblock %}

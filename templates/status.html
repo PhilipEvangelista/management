@@ -1,0 +1,38 @@
+{% extends 'nav_bar.html' %}
+{% load static %}
+{% block content %}
+    <title>
+    Status
+    </title>
+    <link rel="stylesheet" href="{% static 'base/css/status.css' %}">
+    <div class="status">
+    <table>
+    <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Interest</th>
+            <th>Balance</th>
+            <th>Status</th>
+        </tr>
+
+    {% for i in item %}
+    <tr>
+        <td>{{ i.name }}</td>
+        <td>{{ i.age }} years old</td>
+        <td>{{ i.date.date }}</td>
+        <td>{{ i.date.time}}</td>
+        <td>₱ {{ i.interest }}</td>
+        <td>₱ {{ i.balance }}</td>
+        {%if i.balance > 0  %}
+        <td>Unpaid</td>
+        {% else %}
+            <td>Paid</td>
+        {% endif %}
+    </tr>
+
+    {% endfor %}
+     </table>
+    </div>
+{% endblock %}

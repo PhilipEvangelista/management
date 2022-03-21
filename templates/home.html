@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
+    <link rel="stylesheet" href="{% static 'base/css/home.css' %}">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+<div>
+    <p class="quote">If you look at what you have in life, you'll always have more.
+        If you look at what you don't have in life, you'll never have enough</p>
+    <a href="{% url 'list-client' %}"><button>Get started</button></a>
+    <p class="create-account">Don't have account? Create <span><a href="{% url 'create-account' %}">here</a></span> </p>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+{% extends 'nav_bar.html' %}
+{% load static %}
+{% block content %}
+    <link rel="stylesheet" href="{% static 'base/css/create.css' %}">
+    <div class="create">
+    <form method="POST" action="">
+    {% csrf_token %}
+    {{ form.as_p}}
+        <p class="agreement">
+            If your debts reaches 1 month then your debts will increase 1 peso a day.
+        </p>
+    <button type="submit">Submit</button>
+    </form>
+    </div>
+
+
+{% endblock %}
